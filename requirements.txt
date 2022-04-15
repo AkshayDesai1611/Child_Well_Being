@@ -1,4 +1,4 @@
--ython @ file:///C:/ci/cython_1618435363327/work
+
 absl-py==1.0.0
 alabaster @ file:///home/ktietz/src/ci/alabaster_1611921544520/work
 anaconda-client==1.7.2
