@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'ChildWellBeing'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_EBB5E979FAE94B07A91787679E18E8CA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2ECA5AE192DA4E6EA86F91853F38BB36 }}
