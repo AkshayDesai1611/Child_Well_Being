@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template
+from flask_cors import CORS, cross_origin
 import sklearn
 import pickle
 import pandas as pd
@@ -9,12 +10,13 @@ lb = LabelEncoder()
 
 
 app = Flask(__name__)
+CORS(app, support_credentials=True)
 model1 = pickle.load(open("log_model1.pkl", "rb"))
 @app.route('/',methods=['GET'])
 
 
 @app.route("/")
-@cross_origin()
+@cross_origin(supports_credentials=True)
 def home():
     return render_template("index.html")
 
